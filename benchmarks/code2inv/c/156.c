@@ -11,6 +11,6 @@ int main() {
 
         //  assert((k == (3*i)));
     }
-    assert(l == 3 * i);
-    assert(j == 2 * i);
+    assert((l == (3 * i)));
+    assert((j == (2 * i)));
 }

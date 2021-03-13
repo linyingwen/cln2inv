@@ -1,7 +1,9 @@
 //vnew2.c
 int main() {
-    int n, i = 0, k = 0, j = 0;
-    n = unknown();
+    int n, i, k, j;
+    (i = 0);
+    (k = 0);
+    (j = 0);
     assume(n > 0);
     while (i < n) {
         i = i + 3;
@@ -10,7 +12,7 @@ int main() {
     }
     assert(i == j);
     assert(j == k);
-    assert(i % 20000003 != 0);
+    assert(((i % 20000003) != 0));
     return 0;
 }
 

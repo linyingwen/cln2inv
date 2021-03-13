@@ -3,7 +3,7 @@ int main() {
     int x, y;
     x = 0;
     y = 0;
-    while ( 1 ) {
+    while ( 1 == 1 ) {
         if (x < 50) {
             y++;
         } else {

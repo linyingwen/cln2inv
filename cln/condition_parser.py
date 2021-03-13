@@ -53,6 +53,7 @@ def clean_up (line, paren=False):
     
 def full_prefix(line):
     clean = line
+    print(clean)
     if "(" in line:    
         clean = clean_up(line, paren=True)
     

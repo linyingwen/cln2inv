@@ -2,13 +2,12 @@
 int main() {
     int i;
     int l;
-    l = unknown();
     assume(l >= 0);
     assume(l <= 10);
-    i = 0;
+    (i = 0);
     while (i < 1000000*l){
         i = i + l;
     }
-    assert(i == 1000000 * l);
+    assert((i == (1000000 * l)));
     return 0;
 }
