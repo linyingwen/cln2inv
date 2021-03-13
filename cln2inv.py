@@ -51,8 +51,10 @@ def run_code2inv_problem(problem_num):
     solved, inv_str = False, ''
     for n_template in range(10_000):
         cln_template = templateGen.get_next_template()
+
         if cln_template is None:
             break
+        print("running template is: " + cln_template.to_z3().__str__())
         rerun = True
         max_epoch = 2000
         restarts = 0
