@@ -5,10 +5,10 @@
 //count_up_down-2.c
 int main(int argc, char** argv)
 {
-srand(time(0));
-int unknown_1 = atoi(argv[1]);
-int n = rand()%2 < unknown_1;
-int x = n, y = 0;
+int n=atoi(argv[1]);
+int x, y;
+(x = n);
+(y = 0);
 int while_counter_1 = 0;
 while (while_counter_1 < 50)
 {

@@ -5,9 +5,11 @@
 //count_up_down-1.c
 int main(int argc, char** argv)
 {
-int n = 1000000;
-assert(n > 0);
-int x = n, y = 0;
+int n;
+(n = 1000000);
+int x, y;
+(x = n);
+(y = 0);
 int while_counter_1 = 0;
 while (while_counter_1 < 50)
 {

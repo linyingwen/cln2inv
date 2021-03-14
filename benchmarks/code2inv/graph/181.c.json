@@ -7,7 +7,7 @@
 				"arg0": {
 					"OP": "==",
 					"arg0": {
-						"Var": "sn_1"
+						"Var": "sn_2"
 					},
 					"arg1": {
 						"OP": "*",
@@ -22,7 +22,7 @@
 				"arg1": {
 					"OP": "==",
 					"arg0": {
-						"Var": "sn_1"
+						"Var": "sn_2"
 					},
 					"arg1": {
 						"Const": "0"
@@ -35,7 +35,7 @@
 			"rval": {
 				"OP": "==",
 				"arg0": {
-					"Var": "sn_1"
+					"Var": "sn_2"
 				},
 				"arg1": {
 					"Const": "0"
@@ -47,7 +47,7 @@
 			"rval": {
 				"OP": "==",
 				"arg0": {
-					"Var": "sn_1"
+					"Var": "sn_2"
 				},
 				"arg1": {
 					"OP": "*",
@@ -69,12 +69,12 @@
 		"5_1": {
 			"cmd": "assign",
 			"lval": {
-				"Var": "sn_2"
+				"Var": "sn_3"
 			},
 			"rval": {
 				"OP": "+",
 				"arg0": {
-					"Var": "sn_1"
+					"Var": "sn_2"
 				},
 				"arg1": {
 					"Const": "2"
@@ -84,12 +84,12 @@
 		"5_2": {
 			"cmd": "assign",
 			"lval": {
-				"Var": "i_2"
+				"Var": "i_3"
 			},
 			"rval": {
 				"OP": "+",
 				"arg0": {
-					"Var": "i_1"
+					"Var": "i_2"
 				},
 				"arg1": {
 					"Const": "1"
@@ -102,30 +102,30 @@
 		"6_2": {
 			"cmd": "Phi",
 			"lval": {
-				"Var": "i_1"
+				"Var": "i_2"
 			},
 			"rval": {
 				"OP": "phi_merge",
 				"arg0": {
-					"Var": "i_0"
+					"Var": "i_1"
 				},
 				"arg1": {
-					"Var": "i_2"
+					"Var": "i_3"
 				}
 			}
 		},
 		"6_3": {
 			"cmd": "Phi",
 			"lval": {
-				"Var": "sn_1"
+				"Var": "sn_2"
 			},
 			"rval": {
 				"OP": "phi_merge",
 				"arg0": {
-					"Var": "sn_0"
+					"Var": "sn_1"
 				},
 				"arg1": {
-					"Var": "sn_2"
+					"Var": "sn_3"
 				}
 			}
 		},
@@ -134,7 +134,7 @@
 			"rval": {
 				"OP": "<=",
 				"arg0": {
-					"Var": "i_1"
+					"Var": "i_2"
 				},
 				"arg1": {
 					"Const": "8"
@@ -150,7 +150,7 @@
 		"7_1": {
 			"cmd": "assign",
 			"lval": {
-				"Var": "i_0"
+				"Var": "i_1"
 			},
 			"rval": {
 				"Const": "1"
@@ -159,7 +159,7 @@
 		"7_2": {
 			"cmd": "assign",
 			"lval": {
-				"Var": "sn_0"
+				"Var": "sn_1"
 			},
 			"rval": {
 				"Const": "0"

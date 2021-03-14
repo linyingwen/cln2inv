@@ -5,7 +5,9 @@
 //sum04-1.c
 int main(int argc, char** argv)
 {
-int i = 1, sn = 0;
+int i, sn;
+(i = 1);
+(sn = 0);
 int while_counter_1 = 0;
 while (while_counter_1 < 50)
 {
@@ -15,5 +17,5 @@ if (i < 4)
 sn = sn + 2;
 i++;
 }
-assert(sn == 8 * 2 || sn == 0);
+assert((sn == (8 * 2)) || (sn == 0));
 }

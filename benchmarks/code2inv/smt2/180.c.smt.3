@@ -1,76 +1,76 @@
 )
 
-( define-fun pre-f ( ( i Int )( sn Int )( i_0 Int )( i_1 Int )( i_2 Int )( sn_0 Int )( sn_1 Int )( sn_2 Int )( sn_3 Int ) ) Bool
+( define-fun pre-f ( ( i Int )( sn Int )( i_0 Int )( i_1 Int )( i_2 Int )( i_3 Int )( sn_0 Int )( sn_1 Int )( sn_2 Int )( sn_3 Int )( sn_4 Int ) ) Bool
 	( and
-		( = i i_0 )
-		( = sn sn_0 )
-		( = i_0 1 )
-		( = sn_0 0 )
+		( = i i_1 )
+		( = sn sn_1 )
+		( = i_1 1 )
+		( = sn_1 0 )
 	)
 )
 
-( define-fun trans-f ( ( i Int )( sn Int )( i! Int )( sn! Int )( i_0 Int )( i_1 Int )( i_2 Int )( sn_0 Int )( sn_1 Int )( sn_2 Int )( sn_3 Int ) ) Bool
+( define-fun trans-f ( ( i Int )( sn Int )( i! Int )( sn! Int )( i_0 Int )( i_1 Int )( i_2 Int )( i_3 Int )( sn_0 Int )( sn_1 Int )( sn_2 Int )( sn_3 Int )( sn_4 Int ) ) Bool
 	( or
 		( and
-			( = i_1 i )
-			( = sn_1 sn )
-			( = i_1 i! )
-			( = sn_1 sn! )
+			( = i_2 i )
+			( = sn_2 sn )
+			( = i_2 i! )
+			( = sn_2 sn! )
 			( = sn sn! )
 		)
 		( and
-			( = i_1 i )
-			( = sn_1 sn )
-			( <= i_1 8 )
-			( < i_1 4 )
-			( = sn_2 ( + sn_1 2 ) )
-			( = sn_3 sn_2 )
-			( = i_2 ( + i_1 1 ) )
-			( = i_2 i! )
-			( = sn_3 sn! )
+			( = i_2 i )
+			( = sn_2 sn )
+			( <= i_2 8 )
+			( < i_2 4 )
+			( = sn_3 ( + sn_2 2 ) )
+			( = sn_4 sn_3 )
+			( = i_3 ( + i_2 1 ) )
+			( = i_3 i! )
+			( = sn_4 sn! )
 		)
 		( and
-			( = i_1 i )
-			( = sn_1 sn )
-			( <= i_1 8 )
-			( not ( < i_1 4 ) )
-			( = sn_3 sn_1 )
-			( = i_2 ( + i_1 1 ) )
-			( = i_2 i! )
-			( = sn_3 sn! )
+			( = i_2 i )
+			( = sn_2 sn )
+			( <= i_2 8 )
+			( not ( < i_2 4 ) )
+			( = sn_4 sn_2 )
+			( = i_3 ( + i_2 1 ) )
+			( = i_3 i! )
+			( = sn_4 sn! )
 		)
 	)
 )
 
-( define-fun post-f ( ( i Int )( sn Int )( i_0 Int )( i_1 Int )( i_2 Int )( sn_0 Int )( sn_1 Int )( sn_2 Int )( sn_3 Int ) ) Bool
+( define-fun post-f ( ( i Int )( sn Int )( i_0 Int )( i_1 Int )( i_2 Int )( i_3 Int )( sn_0 Int )( sn_1 Int )( sn_2 Int )( sn_3 Int )( sn_4 Int ) ) Bool
 	( and
 		( or
 			( not
 				( and
-					( = i i_1)
-					( = sn sn_1)
+					( = i i_2)
+					( = sn sn_2)
 				)
 			)
 			( not
 				( and
-					( not ( <= i_1 8 ) )
-					( = sn_1 ( * 8 2 ) )
-					( not ( or ( = sn_1 ( * 8 2 ) ) ( = sn_1 0 ) ) )
+					( not ( <= i_2 8 ) )
+					( = sn_2 ( * 8 2 ) )
+					( not ( or ( = sn_2 ( * 8 2 ) ) ( = sn_2 0 ) ) )
 				)
 			)
 		)
 		( or
 			( not
 				( and
-					( = i i_1)
-					( = sn sn_1)
+					( = i i_2)
+					( = sn sn_2)
 				)
 			)
 			( not
 				( and
-					( not ( <= i_1 8 ) )
-					( not ( = sn_1 ( * 8 2 ) ) )
-					( not ( or ( = sn_1 ( * 8 2 ) ) ( = sn_1 0 ) ) )
+					( not ( <= i_2 8 ) )
+					( not ( = sn_2 ( * 8 2 ) ) )
+					( not ( or ( = sn_2 ( * 8 2 ) ) ( = sn_2 0 ) ) )
 				)
 			)
 		)
@@ -80,7 +80,7 @@
 	( =>
 		( and
 			( inv-f i sn )
-			( trans-f i sn i! sn! i_0 i_1 i_2 sn_0 sn_1 sn_2 sn_3 )
+			( trans-f i sn i! sn! i_0 i_1 i_2 i_3 sn_0 sn_1 sn_2 sn_3 sn_4 )
 		)
 		( inv-f i! sn! )
 	)

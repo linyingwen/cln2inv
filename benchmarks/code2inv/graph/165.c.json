@@ -45,12 +45,12 @@
 		"3_3": {
 			"cmd": "assign",
 			"lval": {
-				"Var": "mid_3"
+				"Var": "mid_2"
 			},
 			"rval": {
 				"OP": "-",
 				"arg0": {
-					"Var": "mid_2"
+					"Var": "mid_1"
 				},
 				"arg1": {
 					"Const": "1"
@@ -93,15 +93,15 @@
 		"4_4": {
 			"cmd": "Phi",
 			"lval": {
-				"Var": "mid_2"
+				"Var": "mid_1"
 			},
 			"rval": {
 				"OP": "phi_merge",
 				"arg0": {
-					"Var": "mid_1"
+					"Var": "mid_0"
 				},
 				"arg1": {
-					"Var": "mid_3"
+					"Var": "mid_2"
 				}
 			}
 		},
@@ -110,7 +110,7 @@
 			"rval": {
 				"OP": ">",
 				"arg0": {
-					"Var": "mid_2"
+					"Var": "mid_1"
 				},
 				"arg1": {
 					"Const": "0"
@@ -133,39 +133,30 @@
 			}
 		},
 		"5_2": {
-			"cmd": "assign",
-			"lval": {
-				"Var": "mid_1"
-			},
-			"rval": {
-				"UNK": "UNK_VAL"
-			}
-		},
-		"5_3": {
 			"cmd": "Assume",
 			"rval": {
 				"OP": ">",
 				"arg0": {
-					"Var": "mid_1"
+					"Var": "mid_0"
 				},
 				"arg1": {
 					"Const": "0"
 				}
 			}
 		},
-		"5_4": {
+		"5_3": {
 			"cmd": "Assume",
 			"rval": {
 				"OP": "<=",
 				"arg0": {
-					"Var": "mid_1"
+					"Var": "mid_0"
 				},
 				"arg1": {
 					"Const": "1000000"
 				}
 			}
 		},
-		"5_5": {
+		"5_4": {
 			"cmd": "assign",
 			"lval": {
 				"Var": "hi_1"
@@ -176,7 +167,7 @@
 					"Const": "2"
 				},
 				"arg1": {
-					"Var": "mid_1"
+					"Var": "mid_0"
 				}
 			}
 		},
@@ -203,8 +194,7 @@
 		[ "5_1", "5_2" ],
 		[ "5_2", "5_3" ],
 		[ "5_3", "5_4" ],
-		[ "5_4", "5_5" ],
-		[ "5_5", "4_1" ],
+		[ "5_4", "4_1" ],
 		[ "ENTRY", "5_1" ]
 	]
 }

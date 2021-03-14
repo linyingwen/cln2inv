@@ -12,7 +12,7 @@ int while_counter_1 = 0;
 while (while_counter_1 < 50)
 {
 printf("%d , %d , %d , %d , %d  \n", 1, while_counter_1++, 1, x, y);
-if (!(1)) break;
+if (!( 1 == 1 )) break;
 if (x < 50)
 {
 y++;
