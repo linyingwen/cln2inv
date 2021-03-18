@@ -1,13 +1,14 @@
 //diamond_1-2.c
 int main(void) {
-    int x = 0;
-    int y = unknown();
-
+    int x;
+    int y;
+    (x = 0);
+    assume(y >= 0);
     while (x < 99) {
         if (y % 2 == 0) {
-            x++;
+            x = x + 1;
         } else {
-            x += 2;
+            x = x + 2;
         }
     }
 

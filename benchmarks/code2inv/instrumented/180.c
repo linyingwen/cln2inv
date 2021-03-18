@@ -15,7 +15,7 @@ printf("%d , %d , %d , %d , %d  \n", 1, while_counter_1++, 1, i, sn);
 if (!(i <= 8)) break;
 if (i < 4)
 sn = sn + 2;
-i++;
+i = i + 1;
 }
 assert((sn == (8 * 2)) || (sn == 0));
 }

@@ -6,10 +6,10 @@ int main(void) {
     int z;
     (x = w);
     (y = (w + 1));
-    (z = (x + 1))；
+    (z = (x + 1));
     while (unknown()) {
-        y++;
-        z++;
+        y = y + 1;
+        z = z + 1;
     }
     assert(y == z);
     return 0;

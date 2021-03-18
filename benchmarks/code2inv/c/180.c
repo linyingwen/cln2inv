@@ -6,7 +6,7 @@ int main() {
     while(i <= 8) {
         if (i < 4)
             sn = sn + 2;
-        i++;
+        i = i + 1;
     }
     assert((sn == (8 * 2)) || (sn == 0));
 }
